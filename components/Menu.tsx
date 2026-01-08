@@ -27,24 +27,31 @@ const Category = ({ category }: { category: MenuType['data'][0] }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <div className='bg-white dark:bg-gray-900 mb-6 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden transition-all duration-300 hover:shadow-xl'>
+    <div className='bg-white mb-2 rounded-3xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl'>
       <div
-        className='flex flex-row justify-between items-center p-5 cursor-pointer bg-white dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors duration-300 select-none'
+        className='flex flex-row justify-between items-center p-3 cursor-pointer bg-white hover:bg-gray-50 transition-colors duration-300 select-none'
         onClick={() => setIsOpen(!isOpen)}
       >
         <div className="flex items-center gap-3">
           <span className={`w-1.5 h-6 rounded-full transition-colors duration-300 ${isOpen ? 'bg-blue-500' : 'bg-gray-300'}`}></span>
-          <h2 className={`${josefinSans.variable} font-sans uppercase font-extrabold text-lg md:text-2xl text-gray-800 dark:text-gray-100 tracking-tight`}>
+          <img
+            src={category.source}
+            alt={category.name}
+            width={40}
+            height={40}
+            className='w-12 h-12 object-contain'
+          />
+          <h2 className={`${josefinSans.variable} font-sans uppercase font-extrabold text-lg md:text-2xl text-gray-800  tracking-tight`}>
             {category.name}
           </h2>
         </div>
 
-        <div className={`p-2 rounded-full bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-400 transition-transform duration-500 ${isOpen ? 'rotate-180 bg-blue-50 text-blue-500' : ''}`}>
+        <div className={`p-2 rounded-full bg-gray-50  text-gray-500 transition-transform duration-500 ${isOpen ? 'rotate-180 bg-blue-50 text-blue-500' : ''}`}>
           <ChevronDown size={22} />
         </div>
       </div>
 
-      <div className={`transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div className={`transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[2000] opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className="p-2 space-y-2 pb-4">
           {category.saucerList.map((saucer) => (
             <Saucer key={saucer.id} saucer={saucer} />
@@ -60,15 +67,15 @@ const Saucer = ({ saucer }: { saucer: MenuType['data'][0]['saucerList'][0] }) =>
 
   return (
     <div
-      className='group cursor-pointer p-4 rounded-2xl flex items-center justify-between gap-4 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200 border border-transparent hover:border-gray-100 dark:hover:border-gray-700'
+      className='group cursor-pointer p-4 rounded-2xl flex items-center justify-between gap-4 hover:bg-gray-50 transition-all duration-200 border border-transparent hover:border-gray-100 0'
       onClick={() => {
         setSelectedItem(saucer);
         setCountModal(true);
       }}
     >
       <div className='flex-1'>
-        <h3 className='font-bold text-gray-900 dark:text-white text-lg mb-1 group-hover:text-blue-600 transition-colors'>{saucer.name}</h3>
-        <p className='text-gray-500 dark:text-gray-400 text-sm line-clamp-2 leading-relaxed font-medium'>
+        <h3 className='font-bold text-gray-900 text-lg mb-1 group-hover:text-blue-600 transition-colors'>{saucer.name}</h3>
+        <p className='text-gray-500 text-sm line-clamp-2 leading-relaxed font-medium'>
           {saucer.description || "Delicioso platillo preparado con los mejores ingredientes de la casa."}
         </p>
       </div>

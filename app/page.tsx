@@ -3,20 +3,39 @@ import Cart from "@/components/Cart";
 import CountModal from "@/components/CountModal";
 import Header from "@/components/Header";
 import Menu from "@/components/Menu";
+import OpenCartButton from "@/components/OpenCartButton";
 import { Provider } from "@/context/Context";
-import React from "react";
+import Image from "next/image";
 
 export default function Home() {
+
   return (
     <Provider>
-      <div className="min-h-screen font-sans">
-        <Header />
-        <div className="pt-16">
-          <Menu />
+      <div
+        style={{
+          backgroundImage: "url('/background.webp')",
+          backgroundAttachment: 'fixed',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        <div
+          style={{
+            backgroundColor: "#3a4b5aAA",
+          }}
+        >
+          <div className="min-h-screen font-sans pb-36">
+            <Header />
+            <div className="pt-20">
+              <Menu />
+              <OpenCartButton />
+            </div>
+          </div>
+          <CountModal />
+          <Cart />
         </div>
       </div>
-      <CountModal />
-      <Cart />
     </Provider>
   );
 }
