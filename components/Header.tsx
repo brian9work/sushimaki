@@ -7,7 +7,7 @@ export default function Header() {
   const { cartList, setCartModal } = MyContext();
 
   return (
-    <div className='fixed top-0 left-0 w-full z-50 flex items-center justify-between p-4 py-2 bg-white dark:bg-gray-900 shadow-md'>
+    <div className='fixed top-0 left-0 w-full z-50 flex items-center justify-between p-4 py-2 bg-white  shadow-md'>
       <div className='flex flex-row items-center justify-center'>
         <Image
           src={"/logo.png"}

@@ -11,7 +11,14 @@ export default function ModalComponents({ handleClose, children }: { handleClose
          transition-opacity duration-300
       '>
          <div className="absolute inset-0" onClick={handleClose}></div>
-         <div className='bg-white rounded-3xl w-11/12 max-w-md shadow-2xl z-10 flex flex-col overflow-hidden animate-slide-in max-h-[90vh] p-3'>
+         <div className='
+               bg-white rounded-3xl 
+               w-11/12 max-w-md 
+               shadow-2xl z-10 
+               flex flex-col 
+               overflow-hidden animate-slide-in max-h-[90vh] 
+               p-3
+            '>
             {children}
          </div>
       </div>

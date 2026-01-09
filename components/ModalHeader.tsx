@@ -4,7 +4,7 @@ export default function ModalHeader({text, handleClose}: {text?: string, handleC
     return (
         <div className="border-b border-gray-100 flex justify-between items-center bg-white sticky top-0 z-10 shrink-0">
             <div>
-                <h2 className='font-bold text-2xl text-gray-800'>{text || 'Modal'}</h2>
+                <h2 className='font-bold text-lg md:text-xl xl:text-2xl text-gray-800'>{text || 'Modal'}</h2>
             </div>
             <button
                 onClick={handleClose}

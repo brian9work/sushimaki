@@ -11,7 +11,13 @@ type ContextType = {
   setSelectedItem: React.Dispatch<React.SetStateAction<SaucerType | null>>;
   cartModal: boolean;
   setCartModal: React.Dispatch<React.SetStateAction<boolean>>;
+  optionModal: ModalOption;
+  setOptionModal: React.Dispatch<React.SetStateAction<ModalOption>>;
+  deliveryModal: boolean;
+  setDeliveryModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
+type ModalOption = "delivery" | "pickup" | "" | null
 
 const Context = createContext<ContextType | undefined>(undefined);
 
@@ -27,6 +33,11 @@ export const Provider = ({ children }: { children: React.ReactNode }) => {
   const [selectedItem, setSelectedItem] = useState<SaucerType | null>(null);
   const [cartModal, setCartModal] = useState<boolean>(false);
 
+  const [optionModal, setOptionModal] = useState<ModalOption>(null);
+  const [deliveryModal, setDeliveryModal] = useState<boolean>(false);
+  
+
+
   return (
     <Context.Provider value={{
       cartList,
@@ -36,7 +47,11 @@ export const Provider = ({ children }: { children: React.ReactNode }) => {
       selectedItem,
       setSelectedItem,
       cartModal,
-      setCartModal
+      setCartModal,
+      optionModal,
+      setOptionModal,
+      deliveryModal,
+      setDeliveryModal
     }}>
       {children}
     </Context.Provider>

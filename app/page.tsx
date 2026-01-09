@@ -4,6 +4,7 @@ import CountModal from "@/components/CountModal";
 import Header from "@/components/Header";
 import Menu from "@/components/Menu";
 import OpenCartButton from "@/components/OpenCartButton";
+import SelectedOption from "@/components/SelectedOption";
 import { Provider } from "@/context/Context";
 import Image from "next/image";
 
@@ -34,6 +35,7 @@ export default function Home() {
           </div>
           <CountModal />
           <Cart />
+          <SelectedOption />
         </div>
       </div>
     </Provider>

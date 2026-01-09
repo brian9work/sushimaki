@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+</head>
+<body>
+    <script>
+        const json = {
+    "data": [
+        {
+            "name": "sushi frio",
+            "source": "media/sushi.png",
+            "saucerList": [
+                {
+                    "name": "salmontino",
+                    "description": "Pasta tampico, philadelphia, pepino, zanahoria, por fuera salmi  ahumado y aguacate.",
+                    "price": 90
+                },
+                {
+                    "name": "kioto roll",
+                    "description": "Salmon sellado, philadelphia, pasta tampico y aguacate.",
+                    "price": 90
+                },
+                {
+                    "name": "cangrejo roll",
+                    "description": "Surimi empanizado, pepino, aguacate, alga por fuera y champiñon.",
+                    "price": 75
+                },
+                {
+                    "name": "cheese roll",
+                    "description": "Forrado de queso manchego. aderezo de chipotle, camaron empanizado , philadelphia y aguacate",
+                    "price": 80
+                },
+                {
+                    "name": "dieta roll",
+                    "description": "Surimi, philadelphia, aguacate envuelto en hoja de pepino.",
+                    "price": 75
+                },
+                {
+                    "name": "loco roll",
+                    "description": "Camaron, philadelphia, aguacate envuelto en tocino con queso manchego gratinado",
+                    "price": 75
+                },
+                {
+                    "name": "macho roll",
+                    "description": "Camaron empanizado, aguacate, philadelphia, envuelto en pli ano frito y salsa de anguila.",
+                    "price": 75
+                },
+                {
+                    "name": "green roll",
+                    "description": "Camaron, pepino, aguacate, envuelto en kiwi con salsa de anguila.",
+                    "price": 75
+                },
+                {
+                    "name": "Masago Roll",
+                    "description": "Camari, pepino, philadelphia y masago por fuera",
+                    "price": 90
+                },
+                {
+                    "name": "amai maki",
+                    "description": "Surimi empanizado, aguacate, philadelphia, pepino por fuera con salsa dulce picante.",
+                    "price": 75
+                },
+                {
+                    "name": "kanikama maki",
+                    "description": "Surimi, pasta tampico por dentro y por fuera.",
+                    "price": 70
+                },
+                {
+                    "name": "tropical roll",
+                    "description": "Surimi, pepino, philadelphia, envuelto en mango con salsa de anguila.",
+                    "price": 70
+                },
+                {
+                    "name": "palto maki",
+                    "description": "Camari, pepino, philadelphia, aguacate por fuera y ajonjoli ",
+                    "price": 75
+                },
+                {
+                    "name": "california maki",
+                    "description": "Camaron, pepino, aguacate y ajonjoli por fuera.",
+                    "price": 55
+                },
+                {
+                    "name": "Hanakatsuo Roll",
+                    "description": "Philadelphia, tocino, pollo en teriyaki, por fuera laminas de pez ahumando ",
+                    "price": 90
+                }
+            ]
+        },
+        {
+            "name": "sushi empanizados",
+            "source": "media/sushi3.png",
+            "saucerList": [
+                {
+                    "name": "delux roll",
+                    "description": "Camaron empanizado, aguacate, philadelphia, empanizado por fuera gratinado con queso manchego al chipotle y tocino.",
+                    "price": 85
+                },
+                {
+                    "name": "mar y tierra",
+                    "description": "Camaron, res, pollo en teriyaki, manchego, empanizado por fuera.",
+                    "price": 85
+                },
+                {
+                    "name": "dragon roll",
+                    "description": "Res a la plancha, queso manchego, chiles toreados, empanizado por fuera.",
+                    "price": 80
+                },
+                {
+                    "name": "coco roll",
+                    "description": "Surimi empanizado, aguacate, philadelphia, empanizado por fuera y dulce de coco.",
+                    "price": 80
+                },
+                {
+                    "name": "sweet roll",
+                    "description": "Pollo en teriyaki, philadelphia, queso manchego, empanizado.",
+                    "price": 75
+                },
+                {
+                    "name": "hot roll",
+                    "description": "Camaron empanizado, aguacate, philadelphia, empanizado por fuera y aderezo de chipotle chipotle.",
+                    "price": 70
+                },
+                {
+                    "name": "oishi maki",
+                    "description": "Surimi empanizado, aguacate, queso manchego con salsa dulce picante, empanizado por fuera.",
+                    "price": 75
+                },
+                {
+                    "name": "queso maki",
+                    "description": "Philadelphia, queso manchego, empanizado. por fuera",
+                    "price": 65
+                },
+                {
+                    "name": "SHOKUSHO ROLL",
+                    "description": "Pulpo picante y  philadelphia,  pepino curtido empanizado por fuera",
+                    "price": 90
+                },
+                {
+                    "name": "Niku maki",
+                    "description": "Carne al pastor, queso manchego por dentro; queso manchego gratinado al chipotle, piña asada, empanzado por fuera.",
+                    "price": 85
+                }
+            ]
+        },
+        {
+            "name": "yakimeshi",
+            "source": "media/sopa.png",
+            "saucerList": [
+                {
+                    "name": "yakimeshi verdura",
+                    "description": "arroz frito, zanahoria, calabaza, huevo.",
+                    "price": 50
+                },
+                {
+                    "name": "yakimeshi hiyoko (pollo)",
+                    "description": "arroz frito, pollo, zanahoria, calabaza, huevo.",
+                    "price": 55
+                },
+                {
+                    "name": "yakimeshi gyuniku (res)",
+                    "description": "arroz frito, res, zanahoria, calabaza, huevo y arroz gohan.",
+                    "price": 60
+                },
+                {
+                    "name": "yakimeshi surimi",
+                    "description": "arroz frito, surimi, zanahoria, calabaza, huevo.",
+                    "price": 60
+                },
+                {
+                    "name": "yakimeshi mixto",
+                    "description": "arroz frito, surimi, res, pollo, zanahoria, calabaza y huevo.",
+                    "price": 65
+                }
+            ]
+        },
+        {
+            "name": "pastas",
+            "source": "media/ramen.png",
+            "saucerList": [
+                {
+                    "name": "Schezuan hiyoko (pollo)",
+                    "description": "pasta, pollo, zanahoria, calabaza, brocoli, champiñones, pimientos y cebollin.",
+                    "price": 65
+                },
+                {
+                    "name": "Schezuan gyuniku (res)",
+                    "description": "pasta, res, zanahoria, calabaza, brocoli, champiñones, pimientos y cebollin.",
+                    "price": 70
+                }
+            ]
+        },
+        {
+            "name": "ramen",
+            "source": "media/ramen2.png",
+            "saucerList": [
+                {
+                    "name": "ramen res",
+                    "description": "res, huevo, naruto, cebollin, zanahoria, calabaza, pasta ramen",
+                    "price": 75
+                },
+                {
+                    "name": "ramen surimi",
+                    "description": "surimi en tempura, huevo, naruto, cebollin, zanahoria, calabaza, pasta ramen.",
+                    "price": 75
+                },
+                {
+                    "name": "Ramen Camaron",
+                    "description": "Camaron picante, zanahoria, calabaza, champiñon, huevo, naruto y pasta Ramen",
+                    "price": 85
+                }
+            ]
+        },
+        {
+            "name": "teppanyaki ",
+            "source": "media/teppanyaki.png",
+            "saucerList": [
+                {
+                    "name": "teppanyaki verdura",
+                    "description": "verduras a la plancha, champiñones, calabaza, zanahoria, brocoli, pimiento, cebollin y arroz gohan.",
+                    "price": 50
+                },
+                {
+                    "name": "teppanyaki hiyoko (pollo)",
+                    "description": "verduras a la plancha, pollo, champiñones, calabaza, zanahoria, brocoli, pimiento, cebollin y arroz gohan.",
+                    "price": 55
+                },
+                {
+                    "name": "teppanyaki gyuniku (res)",
+                    "description": "verduras a la plancha, res, champiñones, zanahoria, brocoli, pimiento y cebollin.",
+                    "price": 60
+                }
+            ]
+        },
+        {
+            "name": "temaki",
+            "source": "media/temaki.png",
+            "saucerList": [
+                {
+                    "name": "temaki kappa shako",
+                    "description": "camaron, philadephia, pepino, zanahoria, ajonjoli ",
+                    "price": 55
+                },
+                {
+                    "name": "temaki vegetariano",
+                    "description": "pepino, zanahoria, aguacate, philadelphia.",
+                    "price": 55
+                }
+            ]
+        },
+        {
+            "name": "Nigiris",
+            "source": "media/sushi.png",
+            "saucerList": [
+                {
+                    "name": "Nigiri",
+                    "description": "",
+                    "price": 75
+                }
+            ]
+        },
+        {
+            "name": "kushiague",
+            "source": "media/poke.png",
+            "saucerList": [
+                {
+                    "name": "kushi queso",
+                    "description": "brocheta de queso manchego, philadelphia, empanizado.",
+                    "price": 35
+                },
+                {
+                    "name": "kushi ebi",
+                    "description": "brocheta de camaron, philadelphia, empanizado.",
+                    "price": 35
+                },
+                {
+                    "name": "kushi surim ",
+                    "description": "brocheta de surimi, philadelphia, empanizado.",
+                    "price": 30
+                },
+                {
+                    "name": "kushi banana ",
+                    "description": "brocheta de pli ano frito, philadelphia, empanizado.",
+                    "price": 30
+                }
+            ]
+        },
+        {
+            "name": "gyozas",
+            "source": "media/gyoza.png",
+            "saucerList": [
+                {
+                    "name": "gyozas",
+                    "description": "Rellenas de pollo sabor schezuan acompañado con verduras.",
+                    "price": 60
+                }
+            ]
+        },
+        {
+            "name": "onigiri",
+            "source": "media/onigiri2.png",
+            "saucerList": [
+                {
+                    "name": "onigiri empanizado 2pz",
+                    "description": "2 Piezas, Res, chiles tornados manchego.",
+                    "price": 70
+                },
+                {
+                    "name": "onigiri frio 2pz",
+                    "description": "2 Piezas, pepino, aguacate, camari  y ajonjoli por fuera.",
+                    "price": 70
+                }
+            ]
+        },
+        {
+            "name": "Sushi Tempura",
+            "source": "media/poke.png",
+            "saucerList": [
+                {
+                    "name": "roshy roll",
+                    "description": "surimi, aguacate por fuera en tempura con pasta tampico.",
+                    "price": 85
+                },
+                {
+                    "name": "Kurakka Roll",
+                    "description": "Pollo en tempura, philadelphia, por fuera en tempura con salsa de i uila y galleta de arroz.",
+                    "price": 80
+                },
+                {
+                    "name": "Kunsei Roll",
+                    "description": "Philadelphia, tocino, pollo en teriyaki, por fuera en tempura con li inas de pez ahumando.",
+                    "price": 90
+                }
+            ]
+        },
+        {
+            "name": "sushi charola",
+            "source": "media/bento.png",
+            "saucerList": [
+                {
+                    "name": "sushi empanizado 30pz",
+                    "description": "Charola 30 piezas Hot Roll + 2 aderezos.",
+                    "price": 200
+                },
+                {
+                    "name": "sushi surtido 40pz",
+                    "description": "charola 40 piezas + 3 aderezos",
+                    "price": 350
+                },
+                {
+                    "name": "sushi surtido 30pz",
+                    "description": "charola 30 piezas + 3 aderezos",
+                    "price": 270
+                },
+                {
+                    "name": "Sushi kushiages",
+                    "description": "Charola 30 piezas Hot roll + 2 aderezos. 2 kushi queso/2 kushi surimi  ",
+                    "price": 240
+                }
+            ]
+        },
+        {
+            "name": "poke",
+            "source": "media/poke.png",
+            "saucerList": [
+                {
+                    "name": "poke amai toriniku",
+                    "description": "pollo tempura en teriyaki, mango, pepino, ajonjoli, arroz gohan y alga nori.",
+                    "price": 65
+                },
+                {
+                    "name": "poke surimi teriyaki",
+                    "description": "surimi tempura en teriyaki, mango, pepino, ajonjoli, arroz gohan y alga nori.",
+                    "price": 65
+                }
+            ]
+        },
+        {
+            "name": "bebidas",
+            "source": "media/beer.png",
+            "saucerList": [
+                {
+                    "name": "Agua embotellada",
+                    "description": "",
+                    "price": 15
+                },
+                {
+                    "name": "Agua mineral",
+                    "description": "",
+                    "price": 25
+                },
+                {
+                    "name": "Calpis jarra sabor",
+                    "description": "",
+                    "price": 120
+                },
+                {
+                    "name": "nieve flotante",
+                    "description": "bebida gasificacii  a base de 2 bolas de nieve de limi .",
+                    "price": 39
+                },
+                {
+                    "name": "jarra de te helado negro",
+                    "description": "",
+                    "price": 50
+                },
+                {
+                    "name": "vaso de te helado negro",
+                    "description": "",
+                    "price": 25
+                },
+                {
+                    "name": "Ti Jazmin",
+                    "description": "",
+                    "price": 35
+                },
+                {
+                    "name": "Ti Verde",
+                    "description": "",
+                    "price": 35
+                },
+                {
+                    "name": "calpis sabor",
+                    "price": 40
+                },
+                {
+                    "name": "jarra de calpis",
+                    "description": "Bebida no carbonatada con toques ci ricos y vainilla.",
+                    "price": 50
+                },
+                {
+                    "name": "vaso de calpis",
+                    "description": "Bebida no carbonatada con toques ci ricos y vainilla.",
+                    "price": 25
+                },
+                {
+                    "name": "calpis sabor (jarra)",
+                    "price": 120
+                },
+                {
+                    "name": "refresco lata",
+                    "price": 24
+                },
+                {
+                    "name": "sake Copa",
+                    "description": "Vino de arroz",
+                    "price": 25
+                },
+                {
+                    "name": "Jugo",
+                    "price": 24
+                }
+            ]
+        },
+        {
+            "name": "postres",
+            "source": "media/narutomaki.png",
+            "saucerList": [
+                {
+                    "name": "tempura helado classic",
+                    "description": "cubierto con chocolate li uido.",
+                    "price": 45
+                },
+                {
+                    "name": "tempura helado crunchy",
+                    "description": "cubierto con cajeta y nuez.",
+                    "price": 50
+                },
+                {
+                    "name": "tempura helado magic",
+                    "description": "cubierto con chocolate li uido, crema batida, cereza y con bola de nieve sabor chocolate.",
+                    "price": 53
+                },
+                {
+                    "name": "nieve de limon",
+                    "price": 25
+                },
+                {
+                    "name": "Helado de Matcha",
+                    "description": "",
+                    "price": 50
+                }
+            ]
+        },
+        {
+            "name": "extras",
+            "source": "media/takoyaki.png",
+            "saucerList": [
+                {
+                    "name": "extra salsa de anguila",
+                    "price": 15
+                },
+                {
+                    "name": "extra aderezo de chipotle",
+                    "price": 15
+                },
+                {
+                    "name": "extra pasta tampico",
+                    "price": 20
+                },
+                {
+                    "name": "chiles toreados",
+                    "price": 15
+                },
+                {
+                    "name": "extra wasabi",
+                    "price": 15
+                },
+                {
+                    "name": "descriptionediente extra",
+                    "price": 15
+                },
+                {
+                    "name": "extra siracha",
+                    "price": 15
+                },
+                {
+                    "name": "dulce picante",
+                    "price": 15
+                },
+                {
+                    "name": "dulce naranja",
+                    "price": 15
+                },
+                {
+                    "name": "jengibre curtido",
+                    "price": 15
+                }
+            ]
+        }
+    ]
+}
+
+const newJson = json.data.flatMap(category =>
+  category.saucerList.map(saucer => ({
+    id: Date.now().toString(36) + Math.random().toString(36).substring(2),
+    category: category.name,
+    name: saucer.name,
+    description: saucer.description,
+    price: saucer.price
+  }))
+);
+
+const data = Object.values(
+  newJson.reduce((acc, item) => {
+    if (!acc[item.category]) {
+      acc[item.category] = {
+        id: Date.now().toString(36) + Math.random().toString(36).substring(2),
+        name: item.category,
+        source: "media/sushi.png", // o el source real si lo tienes
+        saucerList: []
+      };
+    }
+
+    acc[item.category].saucerList.push({
+      id: item.id,
+      name: item.name,
+      description: item.description,
+      price: item.price
+    });
+
+    return acc;
+  }, {})
+);
+
+
+
+
+console.log(newJson);
+console.log(data);
+
+console.log(JSON.stringify(data, null, 2));
+
+    </script>
+</body>
+</html>

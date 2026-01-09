@@ -4,7 +4,7 @@ import ModalHeader from './ModalHeader';
 import ModalComponents from './ModalComponents';
 
 export default function Cart() {
-   const { cartModal, setCartModal, cartList, setCartList } = MyContext();
+   const { cartModal, setCartModal, cartList, setCartList, setOptionModal } = MyContext();
 
    const total = useMemo(() => {
       return cartList.reduce((acc, item) => acc + (item.price * item.quantity), 0);
@@ -32,10 +32,8 @@ export default function Cart() {
 
    const sendOrder = () => {
       if (cartList.length === 0) return;
-      // Aquí iría la lógica para enviar el pedido (WhatsApp, API, etc.)
-      alert("¡Pedido enviado! (Simulación)");
-      setCartList([]);
-      handleClose();
+      setOptionModal("");
+      setCartModal(false);
    };
 
    return (
@@ -43,7 +41,7 @@ export default function Cart() {
          <ModalHeader text="Tu Carrito" handleClose={handleClose} />
 
          {/* Content */}
-         <div className="flex-1 overflow-y-auto p-5 space-y-4">
+         <div className="flex-1 overflow-y-auto max-h-[60vh] p-5 space-y-4">
             {cartList.length === 0 ? (
                <div className="flex flex-col items-center justify-center py-10 text-center text-gray-400 opacity-60">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -70,7 +68,7 @@ export default function Cart() {
                            >
                               -
                            </button>
-                           <span className="font-semibold w-6 text-center text-sm">{item.quantity}</span>
+                           <span className="font-semibold w-6 text-center text-sm text-black">{item.quantity}</span>
                            <button
                               onClick={() => item.id && handleIncrement(item.id)}
                               className="w-6 h-6 flex items-center justify-center bg-black rounded-lg hover:bg-gray-800 text-white"
