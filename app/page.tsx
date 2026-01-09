@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Menu from "@/components/Menu";
 import OpenCartButton from "@/components/OpenCartButton";
 import SelectedOption from "@/components/SelectedOption";
+import SocialMedia from "@/components/SocialMedia";
 import { Provider } from "@/context/Context";
 import Image from "next/image";
 
@@ -36,6 +37,7 @@ export default function Home() {
           <CountModal />
           <Cart />
           <SelectedOption />
+          <SocialMedia />
         </div>
       </div>
     </Provider>
