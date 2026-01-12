@@ -6,7 +6,7 @@ export default function ModalComponents({ handleClose, children }: { handleClose
          bg-black/60
          backdrop-blur-sm
          fixed z-50 left-0 top-0
-         w-full min-h-screen
+         w-full min-h-svh
          flex justify-center items-center
          transition-opacity duration-300
       '>

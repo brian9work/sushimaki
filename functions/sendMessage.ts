@@ -31,7 +31,7 @@ Tipo de Pedido: *Recoger en restaurante*%0A%0A
 *Hora de llegada:* ${data.timeArrive}%0A
 Gracias!`;
 
-        const phoneNumber = data.branch === "centro" ? sucursalCentro.number : sucursalCalvario.number;
+        const phoneNumber = data.branch?.includes("Centro") ? sucursalCentro.number : sucursalCalvario.number;
         const url = `https://wa.me/${phoneNumber.replace(/\D/g, '')}?text=${messagePickup}`;
         window.open(url, '_blank');
     }
