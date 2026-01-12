@@ -21,6 +21,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sushi Maki",
   description: "Ordena tu sushi favorito en línea y disfruta de la auténtica experiencia japonesa desde la comodidad de tu hogar.",
+  robots: "index, follow",
+  creator: "Sushi Maki",
+  openGraph: {
+    images: ["https://calpulalpan-sushi.onrender.com/presentacion.png"],
+  },
 };
 
 export default function RootLayout({
