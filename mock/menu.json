@@ -449,13 +449,13 @@
                     "id": "mk532z2smy8g4pu89m",
                     "name": "Agua embotellada",
                     "description": "",
-                    "price": 15
+                    "price": 20
                 },
                 {
                     "id": "mk532z2sib7l3xmumlp",
                     "name": "Agua mineral",
                     "description": "",
-                    "price": 25
+                    "price": 30
                 },
                 {
                     "id": "mk532z2sqqni27g3bh",
@@ -467,48 +467,48 @@
                     "id": "mk532z2sjwbtm6l2c7",
                     "name": "nieve flotante",
                     "description": "bebida gasificacii  a base de 2 bolas de nieve de limi .",
-                    "price": 39
+                    "price": 45
                 },
                 {
                     "id": "mk532z2sr39xdn15qwg",
                     "name": "jarra de te helado negro",
                     "description": "",
-                    "price": 50
+                    "price": 60
                 },
                 {
                     "id": "mk532z2sk06xa0tebz9",
                     "name": "vaso de te helado negro",
                     "description": "",
-                    "price": 25
+                    "price": 30
                 },
                 {
                     "id": "mk532z2svr7jsrhzzfc",
                     "name": "Ti Jazmin",
                     "description": "",
-                    "price": 35
+                    "price": 45
                 },
                 {
                     "id": "mk532z2scfosz88ystu",
-                    "name": "Ti Verde",
+                    "name": "Te Verde Jarra",
                     "description": "",
-                    "price": 35
+                    "price": 45
                 },
                 {
                     "id": "mk532z2sc3shzcsh5xr",
                     "name": "calpis sabor",
-                    "price": 40
+                    "price": 45
                 },
                 {
                     "id": "mk532z2s4s70xqr16v2",
                     "name": "jarra de calpis",
                     "description": "Bebida no carbonatada con toques ci ricos y vainilla.",
-                    "price": 50
+                    "price": 60
                 },
                 {
                     "id": "mk532z2sxy2e8errghe",
                     "name": "vaso de calpis",
                     "description": "Bebida no carbonatada con toques ci ricos y vainilla.",
-                    "price": 25
+                    "price": 35
                 },
                 {
                     "id": "mk532z2slx964ryza7",
@@ -518,7 +518,7 @@
                 {
                     "id": "mk532z2sku0ewu0wtbh",
                     "name": "refresco lata",
-                    "price": 24
+                    "price": 33
                 },
                 {
                     "id": "mk532z2ssul9hmodug",
@@ -527,9 +527,21 @@
                     "price": 25
                 },
                 {
+                    "id": "mk532z2ssul9hmoduddg",
+                    "name": "Mogu Mogua",
+                    "description": "Jugo de fruta con la suave mezcla de la bebida Nata de Coco",
+                    "price": 45
+                },
+                {
+                    "id": "mk532z2ssul9hmodura",
+                    "name": "Ramune",
+                    "description": "Bebida gaseosa de Japon",
+                    "price": 55
+                },
+                {
                     "id": "mk532z2stwm917xo9",
-                    "name": "Jugo",
-                    "price": 24
+                    "name": "Jugo del valle",
+                    "price": 33
                 }
             ]
         },
