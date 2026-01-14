@@ -301,8 +301,6 @@ const Pickup = () => {
                <p className='text-xl text-gray-700'>Total a pagar: <span className='font-bold'>${cartList.reduce((total, item) => total + (item.price * item.quantity), 0)}</span></p>
             </div>
 
-            {JSON.stringify(form)}
-
             <button type="submit" className="mt-4 w-full cursor-pointer bg-black text-white py-3 rounded-xl font-bold hover:bg-gray-800 transition-colors shadow-lg">
                Confirmar Pedido
             </button>
