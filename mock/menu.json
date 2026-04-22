@@ -8,7 +8,7 @@
                 {
                     "id": "mk532z2rkin7ssa17p",
                     "name": "salmontino",
-                    "description": "Pasta tampico, philadelphia, pepino, zanahoria, por fuera salmi  ahumado y aguacate.",
+                    "description": "Pasta tampico, philadelphia, pepino, zanahoria, por fuera salmon ahumado y aguacate.",
                     "price": 90
                 },
                 {
@@ -20,7 +20,7 @@
                 {
                     "id": "mk532z2ssrbxqg2l5th",
                     "name": "cangrejo roll",
-                    "description": "Surimi empanizado, pepino, aguacate, alga por fuera y champiñon.",
+                    "description": "Surimi empanizado, pepino, aguacate, alga por fuera y champiñón.",
                     "price": 75
                 },
                 {
@@ -44,7 +44,7 @@
                 {
                     "id": "mk532z2smfyp07vbldb",
                     "name": "macho roll",
-                    "description": "Camaron empanizado, aguacate, philadelphia, envuelto en pli ano frito y salsa de anguila.",
+                    "description": "Camaron empanizado, aguacate, philadelphia, envuelto en platano frito y salsa de anguila.",
                     "price": 75
                 },
                 {
@@ -80,13 +80,13 @@
                 {
                     "id": "mk532z2s5cpzmhvgqqv",
                     "name": "palto maki",
-                    "description": "Camari, pepino, philadelphia, aguacate por fuera y ajonjoli ",
+                    "description": "Camaron, pepino, philadelphia, aguacate por fuera y ajonjolí ",
                     "price": 75
                 },
                 {
                     "id": "mk532z2spxvcl80xfib",
                     "name": "california maki",
-                    "description": "Camaron, pepino, aguacate y ajonjoli por fuera.",
+                    "description": "Camaron, pepino, aguacate y ajonjolí por fuera.",
                     "price": 55
                 },
                 {
@@ -208,14 +208,14 @@
             "saucerList": [
                 {
                     "id": "mk532z2s324rf0itz64",
-                    "name": "Schezuan hiyoko (pollo)",
-                    "description": "pasta, pollo, zanahoria, calabaza, brocoli, champiñones, pimientos y cebollin.",
+                    "name": "Szechuan hiyoko (pollo)",
+                    "description": "pasta, pollo, zanahoria, calabaza, brócoli, champiñones, pimientos y cebollin.",
                     "price": 65
                 },
                 {
                     "id": "mk532z2s8ryhbmz4evb",
-                    "name": "Schezuan gyuniku (res)",
-                    "description": "pasta, res, zanahoria, calabaza, brocoli, champiñones, pimientos y cebollin.",
+                    "name": "Szechuan gyuniku (res)",
+                    "description": "pasta, res, zanahoria, calabaza, brócoli, champiñones, pimientos y cebollin.",
                     "price": 70
                 }
             ]
@@ -253,19 +253,19 @@
                 {
                     "id": "mk532z2s0ltkxmg0mmc",
                     "name": "teppanyaki verdura",
-                    "description": "verduras a la plancha, champiñones, calabaza, zanahoria, brocoli, pimiento, cebollin y arroz gohan.",
+                    "description": "verduras a la plancha, champiñones, calabaza, zanahoria, brócoli, pimiento, cebollin y arroz gohan.",
                     "price": 50
                 },
                 {
                     "id": "mk532z2snnv6zd5n54n",
                     "name": "teppanyaki hiyoko (pollo)",
-                    "description": "verduras a la plancha, pollo, champiñones, calabaza, zanahoria, brocoli, pimiento, cebollin y arroz gohan.",
+                    "description": "verduras a la plancha, pollo, champiñones, calabaza, zanahoria, brócoli, pimiento, cebollin y arroz gohan.",
                     "price": 55
                 },
                 {
                     "id": "mk532z2s7v28a4se41",
                     "name": "teppanyaki gyuniku (res)",
-                    "description": "verduras a la plancha, res, champiñones, zanahoria, brocoli, pimiento y cebollin.",
+                    "description": "verduras a la plancha, res, champiñones, zanahoria, brócoli, pimiento y cebollin.",
                     "price": 60
                 }
             ]
@@ -278,7 +278,7 @@
                 {
                     "id": "mk532z2s6hxdh5ni98",
                     "name": "temaki kappa shako",
-                    "description": "camaron, philadephia, pepino, zanahoria, ajonjoli ",
+                    "description": "camaron, philadelphia, pepino, zanahoria, ajonjolí ",
                     "price": 55
                 },
                 {
@@ -341,7 +341,7 @@
                 {
                     "id": "mk532z2sbgaaj50eu7a",
                     "name": "gyozas",
-                    "description": "Rellenas de pollo sabor schezuan acompañado con verduras.",
+                    "description": "Rellenas de pollo sabor Szechuan acompañado con verduras.",
                     "price": 60
                 }
             ]
@@ -360,7 +360,7 @@
                 {
                     "id": "mk532z2shikzae4m96",
                     "name": "onigiri frio 2pz",
-                    "description": "2 Piezas, pepino, aguacate, camari  y ajonjoli por fuera.",
+                    "description": "2 Piezas, pepino, aguacate, camari  y ajonjolí por fuera.",
                     "price": 70
                 }
             ]
@@ -385,7 +385,7 @@
                 {
                     "id": "mk532z2snir2rjj1e4",
                     "name": "Kunsei Roll",
-                    "description": "Philadelphia, tocino, pollo en teriyaki, por fuera en tempura con li inas de pez ahumando.",
+                    "description": "Philadelphia, tocino, pollo en teriyaki, por fuera en tempura con laminas de pez ahumando.",
                     "price": 90
                 }
             ]
@@ -429,13 +429,13 @@
                 {
                     "id": "mk532z2s491k9p9roky",
                     "name": "poke amai toriniku",
-                    "description": "pollo tempura en teriyaki, mango, pepino, ajonjoli, arroz gohan y alga nori.",
+                    "description": "pollo tempura en teriyaki, mango, pepino, ajonjolí, arroz gohan y alga nori.",
                     "price": 65
                 },
                 {
                     "id": "mk532z2sqn52ibd3dp",
                     "name": "poke surimi teriyaki",
-                    "description": "surimi tempura en teriyaki, mango, pepino, ajonjoli, arroz gohan y alga nori.",
+                    "description": "surimi tempura en teriyaki, mango, pepino, ajonjolí, arroz gohan y alga nori.",
                     "price": 65
                 }
             ]
@@ -466,7 +466,7 @@
                 {
                     "id": "mk532z2sjwbtm6l2c7",
                     "name": "nieve flotante",
-                    "description": "bebida gasificacii  a base de 2 bolas de nieve de limi .",
+                    "description": "bebida gasificada  a base de 2 bolas de nieve de limón .",
                     "price": 45
                 },
                 {
@@ -483,7 +483,7 @@
                 },
                 {
                     "id": "mk532z2svr7jsrhzzfc",
-                    "name": "Ti Jazmin",
+                    "name": "Te Jazmin",
                     "description": "",
                     "price": 45
                 },
@@ -501,13 +501,13 @@
                 {
                     "id": "mk532z2s4s70xqr16v2",
                     "name": "jarra de calpis",
-                    "description": "Bebida no carbonatada con toques ci ricos y vainilla.",
+                    "description": "Bebida no carbonatada con toques citricos y vainilla.",
                     "price": 60
                 },
                 {
                     "id": "mk532z2sxy2e8errghe",
                     "name": "vaso de calpis",
-                    "description": "Bebida no carbonatada con toques ci ricos y vainilla.",
+                    "description": "Bebida no carbonatada con toques citricos y vainilla.",
                     "price": 35
                 },
                 {
@@ -553,7 +553,7 @@
                 {
                     "id": "mk532z2swhdowz51snl",
                     "name": "tempura helado classic",
-                    "description": "cubierto con chocolate li uido.",
+                    "description": "cubierto con chocolate liquido.",
                     "price": 45
                 },
                 {
@@ -565,7 +565,7 @@
                 {
                     "id": "mk532z2sbutv4ekyvg9",
                     "name": "tempura helado magic",
-                    "description": "cubierto con chocolate li uido, crema batida, cereza y con bola de nieve sabor chocolate.",
+                    "description": "cubierto con chocolate liquido, crema batida, cereza y con bola de nieve sabor chocolate.",
                     "price": 53
                 },
                 {
