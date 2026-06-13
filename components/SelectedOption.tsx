@@ -69,8 +69,10 @@ const Selected = () => {
 
 const Delivery = () => {
    const { setOptionModal, cartList } = MyContext();
+   const sucursalList = sucursales;
    const [form, setForm] = useState<Order>({
       type: "delivery",
+      branch: sucursales[0].name,
       address: "",
       references: "",
       name: "",
@@ -106,6 +108,21 @@ const Delivery = () => {
       <div className='w-full'>
          <ModalHeader text="Datos de Envío" handleClose={handleBack} />
          <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-2 px-1 text-black">
+
+            <div className="flex flex-col gap-1">
+               <label className="text-sm font-semibold text-gray-600">Sucursal que prepara</label>
+               <select
+                  value={form.branch}
+                  onChange={(e) => setForm({ ...form, branch: e.target.value })}
+                  className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black/10 bg-white"
+               >
+                  {sucursalList.map((sucursal) => (
+                     <option key={sucursal.id} value={sucursal.name}>
+                        {sucursal.name}
+                     </option>
+                  ))}
+               </select>
+            </div>
 
             <div className="flex flex-col gap-1">
                <label className="text-sm font-semibold text-gray-600">Nombre</label>
