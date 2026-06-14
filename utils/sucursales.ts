@@ -1,4 +1,6 @@
-const sucursales = [
+import { Sucursal } from "@/types/types";
+
+const sucursales: Sucursal[] = [
     {
         id: "centro",
         name: "Sushi Maki Sucursal Centro",

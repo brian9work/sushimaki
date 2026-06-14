@@ -1,10 +1,11 @@
 import { MyContext } from '@/context/Context';
 import { ShoppingCart } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 export default function Header() {
-  const { cartList, setCartModal } = MyContext();
+  const { cartList, setCartModal, branch } = MyContext();
 
   return (
     <div className='fixed top-0 left-0 w-full z-50 flex items-center justify-between p-4 py-2 bg-white  shadow-md'>
@@ -16,7 +17,12 @@ export default function Header() {
           height={512}
           className='w-16 h-16 object-contain'
         />
-        <h1 className='font-bold text-2xl text-gray-800'>SushiMaki</h1>
+        <div className='flex flex-col'>
+          <h1 className='font-bold text-2xl text-gray-800 leading-tight'>SushiMaki</h1>
+          <Link href="/" className='text-xs text-blue-600 hover:underline'>
+            {branch.name} · Cambiar sucursal
+          </Link>
+        </div>
       </div>
       <div
         className="flex flex-row items-center gap-2 cursor-pointer rounded-md bg-blue-600 px-3 py-2 text-sm font-medium text-foreground hover:bg-blue-800"

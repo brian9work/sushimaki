@@ -1,8 +1,9 @@
 import { SaucerType } from '@/types/ResponseTypes';
-import { CartList } from '@/types/types';
+import { CartList, Sucursal } from '@/types/types';
 import { createContext, useContext, useState } from 'react';
 
 type ContextType = {
+  branch: Sucursal;
   cartList: CartList;
   setCartList: React.Dispatch<React.SetStateAction<CartList>>;
   countModal: boolean;
@@ -27,7 +28,7 @@ export const MyContext = () => {
   return context;
 };
 
-export const Provider = ({ children }: { children: React.ReactNode }) => {
+export const Provider = ({ children, branch }: { children: React.ReactNode; branch: Sucursal }) => {
   const [cartList, setCartList] = useState<CartList>([]);
   const [countModal, setCountModal] = useState<boolean>(false);
   const [selectedItem, setSelectedItem] = useState<SaucerType | null>(null);
@@ -40,6 +41,7 @@ export const Provider = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <Context.Provider value={{
+      branch,
       cartList,
       setCartList,
       countModal,

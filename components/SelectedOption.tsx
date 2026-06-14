@@ -5,7 +5,7 @@ import { MyContext } from '@/context/Context';
 import { HandPlatter, House, Banknote, Smartphone, Copy, Check } from 'lucide-react';
 import sendMessage from '@/functions/sendMessage';
 import { Order } from '@/types/types';
-import sucursales, { deliveryCost } from '@/utils/sucursales';
+import { deliveryCost } from '@/utils/sucursales';
 
 export default function SelectedOption() {
    const { optionModal, setOptionModal } = MyContext();
@@ -68,11 +68,10 @@ const Selected = () => {
 }
 
 const Delivery = () => {
-   const { setOptionModal, cartList } = MyContext();
-   const sucursalList = sucursales;
+   const { setOptionModal, cartList, branch } = MyContext();
    const [form, setForm] = useState<Order>({
       type: "delivery",
-      branch: sucursales[0].name,
+      branch: branch.name,
       address: "",
       references: "",
       name: "",
@@ -111,17 +110,7 @@ const Delivery = () => {
 
             <div className="flex flex-col gap-1">
                <label className="text-sm font-semibold text-gray-600">Sucursal que prepara</label>
-               <select
-                  value={form.branch}
-                  onChange={(e) => setForm({ ...form, branch: e.target.value })}
-                  className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black/10 bg-white"
-               >
-                  {sucursalList.map((sucursal) => (
-                     <option key={sucursal.id} value={sucursal.name}>
-                        {sucursal.name}
-                     </option>
-                  ))}
-               </select>
+               <p className="p-2 border border-gray-200 rounded-lg bg-gray-50 font-medium">{branch.name}</p>
             </div>
 
             <div className="flex flex-col gap-1">
@@ -244,12 +233,11 @@ const Delivery = () => {
    )
 }
 const Pickup = () => {
-   const { setOptionModal, cartList } = MyContext();
-   const sucursalList = sucursales;
+   const { setOptionModal, cartList, branch } = MyContext();
 
    const [form, setForm] = useState<Order>({
       type: "pickup",
-      branch: sucursales[0].name,
+      branch: branch.name,
       timeArrive: "",
       name: "",
    });
@@ -268,27 +256,17 @@ const Pickup = () => {
 
             <div className="flex flex-col gap-1">
                <label className="text-sm font-semibold text-gray-600">Sucursal</label>
-               <select
-                  value={form.branch}
-                  onChange={(e) => setForm({ ...form, branch: e.target.value })}
-                  className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black/10 bg-white"
-               >
-                  {sucursalList.map((sucursal) => (
-                     <option key={sucursal.id} value={sucursal.name}>
-                        {sucursal.name}
-                     </option>
-                  ))}
-               </select>
+               <p className="p-2 border border-gray-200 rounded-lg bg-gray-50 font-medium">{branch.name}</p>
                <p className="text-xs text-gray-500">
-                  {sucursalList.find(s => s.name === form.branch)?.address}
+                  {branch.address}
                </p>
-               <iframe 
-                  src={sucursalList.find(s => s.name === form.branch)?.embedded}
+               <iframe
+                  src={branch.embedded}
                   width="100%"
                   height="150"
                   loading="lazy"
                />
-               
+
             </div>
 
             <div className="flex flex-col gap-1">

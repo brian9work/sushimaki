@@ -7,6 +7,15 @@ export type Cart = {
    quantity: number;
 }
 
+export type Sucursal = {
+   id: string
+   name: string
+   address: string
+   maps: string
+   embedded: string
+   number: string
+}
+
 export type Order = {
    type: "delivery" | "pickup"
    address?: string | ""
